@@ -5,16 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Koketjo Mothapo - Software Engineer</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
 
   <header>
     <nav>
       <ul>
-        <li><a href="about.html">About</a></li>
         <li><a href="profile.html">Home</a></li>
-        <li><a href="#">Education</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -25,7 +26,7 @@
     <div class="left-section">
       <div class="laptop-container">
         <img src="background.jpg" alt="Laptop" class="laptop-image">
-        <h1 class="laptop-text">Hi, I'm Koketjo Mothapo</h1>
+        <h1 class="laptop-text" style="font-family: Georgia, serif;">HELLO, I'M <br><br> KOKETJO MOTHAPO </h1>
       </div>
     </div>
     <div class="right-section">
@@ -47,7 +48,137 @@
       </div>
     </div>
   </div>
+  <section id="about">
+    <h2>About</h2><br>
+    <div class="about-container" style="border: 3px double green;">
+      <div class="about-item">
+        <h3 style="color: green">MY BACKGROUND</h3><br>
+        <p style="color: white">My passion for tech began during my high school years where I first got introduced to html and later python basics. I have never looked back since.<br> I have since been on a path to learn various languages and tools.<br> My goal? To create life changing innovative software solutions. And so the journey continues!</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- Image 2: Education -->
+  <section id="education">
+    <h2>Education</h2><br>
+    <div class="education-container">
+      <div class="education-item">
+        <h3>01 Jiyana Secondary School</h3>
+        <p>My first introduction into everything technology, I studied Computer Applications Technology (CAT).</p>
+      </div>
+      <div class="education-item">
+        <h3>02 Codsoft</h3>
+        <p>Obtained my NQF level 5 in Software Development, this defines most of my software knowledge where I obtained my web development, CI/CD, DevOps and collaboration skills.</p>
+      </div>
+      <div class="education-item">
+        <h3>03 Wethinkcode_</h3>
+        <p>I did a Java programming internship where I delved in OOP, APIs and GUI.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image 3: Skills -->
+  <section id="skills">
+    <h2>Skills</h2><br>
+    <div class="skills-container">
+      <div class="skill-item">
+        <h3>Programming languages</h3>
+        <ul>
+          <li>Python</li>
+          <li>Java</li>
+          <li>C++ (basic)</li>
+        </ul>
+      </div>
+      <div class="skill-item">
+        <h3>Web development</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+      <div class="skill-item">
+        <h3>Database & Data management</h3>
+        <ul>
+          <li>SQL</li>
+        </ul>
+      </div>
+      <div class="skill-item">
+        <h3>DevOps & Deployment</h3>
+        <ul>
+          <li>Docker</li>
+          <li>CI/CD</li>
+        </ul>
+      </div>
+      <div class="skill-item">
+        <h3>Testing</h3>
+        <ul>
+          <li>Unit testing</li>
+        </ul>
+      </div>
+      <div class="skill-item">
+        <h3>Version Control</h3>
+        <ul>
+          <li>Git</li>
+          <li>Github</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image 1: Projects -->
+  <section id="projects">
+    <h2>Projects</h2><br>
+    <div class="project-container">
+      <div class="project">
+        <h3>Student Management System</h3>
+        <p>Student management system where students can: Add a new student, Remove an existing student, Edit an existing student's info, Search for a student, Display all students, and Exit the system.</p>
+        <p>1. Java language<br>2. Javafx for the GUI</p>
+      </div>
+      <div class="project">
+        <h3>Rock, paper, scissors game.</h3>
+        <p>Simple Rock, paper, scissors game</p>
+        <p>1. Python language<br>2. Tkinker for GUI</p>
+      </div>
+      <div class="project">
+        <h3>ATM Interface</h3>
+        <p>Simulates the basic functions of an ATM where a user can: Check their balance, Withdraw money, Deposit money, Quit transactions.</p>
+        <p>1. Java language<br>2. Swing library for GUI</p>
+      </div>
+      <div class="project">
+        <h3>Currency Converter</h3>
+        <p>Simulates the basic functions of an ATM where a user can: Check their balance, Withdraw money, Deposit money, Quit transactions.</p>
+        <p>1. Java language<br>2. Swing library for GUI</p>
+      </div>
+      <div class="project">
+        <h3>Random Number Generator</h3>
+        <p>Simulates the basic functions of an ATM where a user can: Check their balance, Withdraw money, Deposit money, Quit transactions.</p>
+        <p>1. Java language<br>2. Swing library for GUI</p>
+      </div>
+      <div class="project">
+        <h3>Student Grade Calculator</h3>
+        <p>Simulates the basic functions of an ATM where a user can: Check their balance, Withdraw money, Deposit money, Quit transactions.</p>
+        <p>1. Java language<br>2. Swing library for GUI</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image 5: Contact -->
+  <section id="contact">
+    <h2>Chat with me</h2><br>
+    <div class="contact-container">
+      <div class="contact-item">
+        <img src="chat.png" alt="Chat icon" class="chat-image">
+        <form>
+          <input type="text" placeholder="First Name" required>
+          <input type="text" placeholder="Last Name" required>
+          <input type="email" placeholder="Email *" required>
+          <textarea placeholder="Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
   <script src="script.js"></script>
 </body>
 </html>
