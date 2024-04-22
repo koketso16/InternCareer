@@ -1,9 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0D2C54;
+  color: white;
+}
+
 header {
   background-color: #0D2C54;
   padding: 1rem;
 }
 
-nav ul {
+/* Navigation bar */
+/* Navigation bar */
+header nav ul {
   display: flex;
   justify-content: center;
   list-style-type: none;
@@ -11,158 +25,126 @@ nav ul {
   padding: 0;
 }
 
-nav ul li {
-  margin: 0 1rem;
+header nav ul li {
+    margin-left: 0;
 }
 
-nav ul li a {
-  color: white;
+header nav ul li a {
+  color: #fff;
   text-decoration: none;
-  font-size: 1.1rem;
-  transition: color 0.3s;
+  font-size: 1.2rem;
+  padding: 0;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  margin: 0 0.25rem; /* Added space between navigation items */
+  border: 1px dashed yellow; /* Add border */
+  padding: 0.1rem 0.7rem; /* Adjust padding on hover */
+
 }
 
-nav ul li a:hover {
-  color: #ccc;
+header nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-body {
-font-family: Arial, sans-serif;
-background-color: #0D2C54;
-color: white;
-}
+
 
 .container {
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-}
-
-.left-section {
-flex: 1;
-padding: 2rem;
-position: relative;
-}
-
-.laptop-container {
-position: relative;
-}
-
-.laptop-image {
-width: 950px;
-height: 600px;
-}
-
-.laptop-text {
-position: absolute;
-top: 70%;
-left: 40%;
-transform: translate(-50%, -50%);
-font-size: 3rem;
-color: white;
-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-.right-section {
-flex: 1;
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 2rem;
-}
-
-.profile-image {
-margin-bottom: 1.5rem;
-}
-
-.profile-picture {
-width: 200px;
-height: 290px;
-border-radius: 50%;
-object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
 }
 
 .profile-info {
-text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left : 20rem;
+  margin-bottom : 7rem;
+
 }
 
+.profile-image {
+  display: flex;
+  margin-left : -45rem;
+  margin-bottom: -10rem;
+  margin-top: 5rem;
+  margin-right: -10rem;
+
+}
+
+.profile-details {
+  margin-left : -15rem;
+  margin-top: -5.5rem;
+  margin-right: -15rem;
+
+}
+
+.profile-picture {
+  display: flex;
+  width: 250px;
+  height: 290px;
+  border-radius: 50%;
+  object-fit: cover;
+  transform-style: preserve-3d;
+
+}
+
+.profile-image:hover .profile-picture {
+
+    transform: rotateX(180deg);
+  }
+
 .role {
-font-size: 1.2rem;
-margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 
 .email {
-font-size: 1rem;
-margin-bottom: 1rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .social-links {
-display: flex;
-justify-content: center;
-margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .social-icon {
-width: 30px;
-height: 30px;
-margin: 0 0.5rem;
+  width: 30px;
+  height: 30px;
+  margin: 0 0.5rem;
 }
 
 .download-cv-btn {
-background-color: #0D2C54;
-color: white;
-border: 2px solid white;
-padding: 0.5rem 1rem;
-font-size: 1rem;
-cursor: pointer;
-transition: background-color 0.3s;
+  background-color: #0D2C54;
+  color: white;
+  border: 2px solid white;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .download-cv-btn:hover {
-background-color: white;
-color: #0D2C54;
+  background-color: yellow;
+  color: #0D2C54;
 }
-/* Projects Section */
-#projects {
-  padding: 50px;
-}
+
 
 .project-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .project {
   width: 30%;
   margin-bottom: 30px;
-  padding: 20px;
-  background-color: #f5f5f5;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  color: #333;
-}
-
-/* Education Section */
-#education {
-  padding: 50px;
-  background-color: #0D2C54;
-}
-
-.education-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.education-item {
-  width: 45%;
+  margin-left: 2rem;
   padding: 20px;
   background-color: white;
   border-radius: 5px;
@@ -170,8 +152,30 @@ color: #0D2C54;
   color: #333;
 }
 
-/* Skills Section */
+#education {
+  font-family: "Courier New", sans-serif;
+  padding: 50px;
+  background-color: #0D2C54;
+
+}
+
+.education-container {
+  display: flex;
+  justify-content: space-between;
+  color : green;
+}
+
+.education-item {
+  width: 45%;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color : yellow;
+}
+
+
 #skills {
+  font-family: "Courier New", sans-serif;
   padding: 50px;
 }
 
@@ -185,10 +189,11 @@ color: #0D2C54;
   width: 30%;
   margin-bottom: 30px;
   padding: 20px;
-  background-color: #f5f5f5;
+  background-color : grey;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  color: #333;
+  color : white;
+
 }
 
 /* About Section */
@@ -215,6 +220,8 @@ color: #0D2C54;
 
 /* Contact Section */
 #contact {
+  font-family: "Courier New", sans-serif;
+  font-size: 18pt;
   padding: 50px;
 }
 
@@ -223,9 +230,16 @@ color: #0D2C54;
   justify-content: center;
 }
 
-.contact-item {
+.contact-item-1 {
+  text-align: center;
+  margin-left: -5rem;
+  color: #333;
+}
+
+.contact-item-2 {
   width: 50%;
   padding: 20px;
+  margin-left: 5rem;
   background-color: #f5f5f5;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -233,39 +247,109 @@ color: #0D2C54;
   color: #333;
 }
 
-.contact-item img {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 20px;
-}
-
-.contact-item form {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-item input, .contact-item textarea {
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.contact-item button {
-  background-color: #0D2C54;
-  color: white;
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm fieldset,
+#fs-frm optgroup,
+#fs-frm label,
+#fs-frm #card-element:disabled {
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+#fs-frm label,
+#fs-frm legend,
+#fs-frm ::placeholder {
+  font-size: .825rem;
+  margin-bottom: .5rem;
+  padding-top: .2rem;
+  display: flex;
+  align-items: baseline;
+}
+
+/* border, padding, margin, width */
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm #card-element {
+  border: 1px solid rgba(0,0,0,0.2);
+  background-color: rgba(255,255,255,0.9);
+  padding: .75em 1rem;
+  margin-bottom: 1.5rem;
+}
+#fs-frm input:focus,
+#fs-frm select:focus,
+#fs-frm textarea:focus {
+  background-color: white;
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: gray;
+  outline-offset: -1px;
+}
+#fs-frm [type="text"],
+#fs-frm [type="email"] {
+  width: 100%;
+}
+#fs-frm [type="button"],
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+  width: auto;
   cursor: pointer;
-  transition: background-color 0.3s;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+#fs-frm [type="button"]:focus,
+#fs-frm [type="submit"]:focus,
+#fs-frm [type="reset"]:focus {
+  outline: none;
+}
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+  margin-bottom: 0;
+}
+#fs-frm select {
+  text-transform: none;
 }
 
-.contact-item button:hover {
-  background-color: #0D2C54;
+#fs-frm [type="checkbox"] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  appearance: checkbox;
+  display: inline-block;
+  width: auto;
+  margin: 0 .5em 0 0 !important;
 }
 
-.chat-image
-{
-    margin-left : -1100px;
+#fs-frm [type="radio"] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+  appearance: radio;
+}
+
+/* address, locale */
+#fs-frm fieldset.locale input[name="city"],
+#fs-frm fieldset.locale select[name="state"],
+#fs-frm fieldset.locale input[name="postal-code"] {
+  display: inline;
+}
+#fs-frm fieldset.locale input[name="city"] {
+  width: 52%;
+}
+#fs-frm fieldset.locale select[name="state"],
+#fs-frm fieldset.locale input[name="postal-code"] {
+  width: 20%;
+}
+#fs-frm fieldset.locale input[name="city"],
+#fs-frm fieldset.locale select[name="state"] {
+  margin-right: 3%;
 }
