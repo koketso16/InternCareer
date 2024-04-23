@@ -1,35 +1,27 @@
-// script.js
+document.addEventListener("DOMContentLoaded", function() {
+  const downloadBtn = document.querySelector(".download-cv-btn");
 
-// Define an array of image URLs
-const imageUrls = [
-    'image1.jpg',
-    'image2.jpg',
-    'image3.jpg',
-];
+  downloadBtn.addEventListener("click", function() {
+    const link = document.createElement("a");
+    link.href = "cv.pdf";
+    link.download = "cv.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+});
 
-let currentIndex = 0; // Initialize the current image index
+document.addEventListener("DOMContentLoaded", function() {
+  const linkedinLink = document.querySelector(".linkedin-link");
+  const githubLink = document.querySelector(".github-link");
 
-// Function to display the current image
-function displayCurrentImage() {
-    const imageContainer = document.getElementById('image-container');
-    imageContainer.innerHTML = `<img src="${imageUrls[currentIndex]}" alt="Slideshow Image">`;
-}
+  linkedinLink.addEventListener("click", function(event) {
+    event.preventDefault(); 
+    window.open("https://www.linkedin.com/in/koketjo-mothapo-220133183/", "_blank"); 
+  });
 
-// Function to advance to the next image
-function nextImage() {
-    currentIndex = (currentIndex + 1) % imageUrls.length;
-    displayCurrentImage();
-}
-
-// Function to go back to the previous image
-function previousImage() {
-    currentIndex = (currentIndex - 1 + imageUrls.length) % imageUrls.length;
-    displayCurrentImage();
-}
-
-// Add event listeners for next and previous buttons
-document.getElementById('next-button').addEventListener('click', nextImage);
-document.getElementById('previous-button').addEventListener('click', previousImage);
-
-// Initial display of the first image
-displayCurrentImage();
+  githubLink.addEventListener("click", function(event) {
+    event.preventDefault(); 
+        window.open("https://github.com/koketso16", "_blank");
+  });
+});
