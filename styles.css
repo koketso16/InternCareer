@@ -15,8 +15,6 @@ header {
   padding: 1rem;
 }
 
-/* Navigation bar */
-/* Navigation bar */
 header nav ul {
   display: flex;
   justify-content: center;
@@ -27,6 +25,7 @@ header nav ul {
 
 header nav ul li {
   margin-left: 0;
+  margin-bottom: 0.5rem;
 }
 
 header nav ul li a {
