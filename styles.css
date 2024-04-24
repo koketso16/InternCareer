@@ -16,6 +16,7 @@ header {
 }
 
 /* Navigation bar */
+/* Navigation bar */
 header nav ul {
   display: flex;
   justify-content: center;
@@ -25,7 +26,7 @@ header nav ul {
 }
 
 header nav ul li {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 header nav ul li a {
@@ -35,20 +36,27 @@ header nav ul li a {
   padding: 0;
   border-radius: 10px;
   transition: background-color 0.3s;
-  margin: 0 0.25rem; /* Added space between navigation items */
-  border: 1px dashed yellow; /* Add border */
-  padding: 0.1rem 0.7rem; /* Adjust padding on hover */
+  margin: 0 0.25rem;
+  border: 1px dashed yellow;
+  padding: 0.1rem 0.7rem;
 }
 
 header nav ul li a:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+@media screen and (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 0rem;
 }
 
 .profile-info {
@@ -71,8 +79,8 @@ header nav ul li a:hover {
 .profile-details {
   margin-left: 16rem;;
   margin-right: auto;
-  margin-top: -5rem;
-  margin-bottom: 30rem;
+  margin-top: -2rem;
+  margin-bottom: 4rem;
 }
 
 .profile-picture {
@@ -82,10 +90,6 @@ header nav ul li a:hover {
   border-radius: 50%;
   object-fit: cover;
   transform-style: preserve-3d;
-}
-
-.profile-image:hover .profile-picture {
-    transform: rotateX(180deg);
 }
 
 .role {
@@ -146,19 +150,21 @@ header nav ul li a:hover {
 
 #education {
   font-family: "Courier New", sans-serif;
-  padding: 50px;
+  padding: 2rem;
   background-color: #0D2C54;
 }
 
 .education-container {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
   color: green;
 }
 
 .education-item {
-  width: 45%;
-  padding: 20px;
+  flex-basis: 45%;
+  margin-bottom: 2rem;
+  padding: 1rem;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   color: yellow;
@@ -166,19 +172,20 @@ header nav ul li a:hover {
 
 #skills {
   font-family: "Courier New", sans-serif;
-  padding: 50px;
+  padding: 2rem;
+  background-color: #0D2C54;
 }
 
 .skills-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .skill-item {
-  width: 30%;
-  margin-bottom: 30px;
-  padding: 20px;
+  flex-basis: 45%;
+  margin-bottom: 2rem;
+  padding: 1rem;
   background-color: grey;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -211,24 +218,27 @@ header nav ul li a:hover {
 #contact {
   font-family: "Courier New", sans-serif;
   font-size: 18pt;
-  padding: 50px;
+  padding: 2rem;
+  background-color: #0D2C54;
 }
 
 .contact-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .contact-item-1 {
+  flex-basis: 100%;
   text-align: center;
-  margin-left: -5rem;
+  margin-bottom: 2rem;
   color: #333;
 }
 
 .contact-item-2 {
-  width: 50%;
-  padding: 20px;
-  margin-left: 5rem;
+  flex-basis: 45%;
+  padding: 1rem;
+  margin: 0 1rem;
   background-color: #f5f5f5;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
